@@ -1,8 +1,8 @@
-angular.module('starter.services', [])
+angular.module('starter.services', ["firebase"])
 /**
  * A simple example service that returns some data.
  */
-.factory('fireBaseData', function($firebase) {
+.factory('fireBaseData', function($firebaseObject) {
   var ref = new Firebase("https://mappionc.firebaseio.com/"),
       refExpenses = new Firebase("https://mappionc.firebaseio.com/expenses"),
       refRoomMates = new Firebase("https://mappionc.firebaseio.com/room-mates");

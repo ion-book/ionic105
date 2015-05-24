@@ -1,8 +1,8 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ["firebase"])
 
-.controller('DashCtrl', function($scope, fireBaseData, $firebase) {
-      $scope.expenses = $firebase(fireBaseData.refExpenses()).$asArray();
-        $scope.user = fireBaseData.ref().getAuth();
+.controller('DashCtrl', function($scope, fireBaseData, $firebaseArray) {
+      $scope.expenses = $firebaseArray(fireBaseData.refExpenses());
+      $scope.user = fireBaseData.ref().getAuth();
       //ADD MESSAGE METHOD
       $scope.addExpense = function(e) {
           $scope.expenses.$add({
@@ -21,13 +21,14 @@ angular.module('starter.controllers', [])
             return rtnTotal;
         };
 })
-.controller('FriendsCtrl', function($scope, fireBaseData, $firebase) {
+.controller('FriendsCtrl', function($scope, fireBaseData, $firebaseArray) {
         $scope.user = fireBaseData.ref().getAuth();
-        $scope.expenses = $firebase(fireBaseData.refExpenses()).$asArray();
-        $scope.roomies = $firebase(fireBaseData.refRoomMates()).$asArray();
+        $scope.expenses = $firebaseArray(fireBaseData.refExpenses());
+        $scope.roomies = $firebaseArray(fireBaseData.refRoomMates());
         $scope.roomies.$loaded().then(function(array) {
            var i;
             //array = [[set1_rm1_email, set1_rm2_email], [set2_rm1_email, set2_rm2_email] ...]
+            array=[["juantopo@dispostable.com", "yolo@dispostable.com"]];
             for (i = 0; i < array.length; i = i + 1) {
                if (array[i][0] === $scope.user.password.email) {
                    $scope.roomiesEmail = array[i][1];
@@ -35,7 +36,7 @@ angular.module('starter.controllers', [])
                    $scope.roomiesEmail = array[i][0];
                }
             }
-            $scope.$apply();
+            //$scope.$apply();
             //Yes this whole app, front-end to backend is built only for two room-mates situation
         });
         $scope.addExpense = function(e) {
@@ -55,7 +56,7 @@ angular.module('starter.controllers', [])
             return rtnTotal;
         };
 })
-.controller('AccountCtrl', function($scope, fireBaseData, $firebase) {
+.controller('AccountCtrl', function($scope, fireBaseData, $firebaseArray) {
         $scope.showLoginForm = false;
         //Checking if user is logged in
         $scope.user = fireBaseData.ref().getAuth();
@@ -73,8 +74,8 @@ angular.module('starter.controllers', [])
                     $scope.user = fireBaseData.ref().getAuth();
                     $scope.showLoginForm = false;
                     $scope.$apply();
-                    /*var r = $firebase(fireBaseData.refRoomMates()).$asArray();
-                    r.$add(["k@gmail.com","r@gmail.com"]);*/
+                    var r = $firebaseArray(fireBaseData.refRoomMates());
+                    r.$add(["yolo@dispostable.com"]);
                 } else {
                     console.log("Error authenticating user:", error);
                 }
