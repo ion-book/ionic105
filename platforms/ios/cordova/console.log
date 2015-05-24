@@ -1,6 +1,6 @@
-2015-05-21 15:24:27.690 loopapplytics[5379:1372420] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/carlosrojas/Library/Developer/CoreSimulator/Devices/8982BBF8-5099-4C26-AF21-E05A9337160E/data/Containers/Data/Application/95AEF4A1-4FDA-43F0-BEA8-5A2C456BD30D/Library/Cookies/Cookies.binarycookies
-2015-05-21 15:24:27.996 loopapplytics[5379:1372420] Apache Cordova native platform version 3.8.0 is starting.
-2015-05-21 15:24:27.997 loopapplytics[5379:1372420] Multi-tasking -> Device: YES, App: YES
-2015-05-21 15:24:28.015 loopapplytics[5379:1372420] Unlimited access to network resources
-2015-05-21 15:24:29.008 loopapplytics[5379:1372420] Resetting plugins due to page load.
-2015-05-21 15:24:29.335 loopapplytics[5379:1372420] Finished load of: file:///Users/carlosrojas/Library/Developer/CoreSimulator/Devices/8982BBF8-5099-4C26-AF21-E05A9337160E/data/Containers/Bundle/Application/42A60401-0B54-4DEB-9E0E-3DE1B4B4C107/loopapplytics.app/www/index.html#/tab/dash
+2015-05-24 15:32:21.864 MoneyApp[10986:1913814] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/carlosrojas/Library/Developer/CoreSimulator/Devices/8982BBF8-5099-4C26-AF21-E05A9337160E/data/Containers/Data/Application/5A70DEF6-B08A-4D9A-A492-41CC25CC6C4C/Library/Cookies/Cookies.binarycookies
+2015-05-24 15:32:21.955 MoneyApp[10986:1913814] Apache Cordova native platform version 3.8.0 is starting.
+2015-05-24 15:32:21.955 MoneyApp[10986:1913814] Multi-tasking -> Device: YES, App: YES
+2015-05-24 15:32:21.957 MoneyApp[10986:1913814] Unlimited access to network resources
+2015-05-24 15:32:22.609 MoneyApp[10986:1913814] Resetting plugins due to page load.
+2015-05-24 15:32:23.104 MoneyApp[10986:1913814] Finished load of: file:///Users/carlosrojas/Library/Developer/CoreSimulator/Devices/8982BBF8-5099-4C26-AF21-E05A9337160E/data/Containers/Bundle/Application/3D7DBE83-874F-41F9-9771-67AF003DBA76/MoneyApp.app/www/index.html#/tab/dash
