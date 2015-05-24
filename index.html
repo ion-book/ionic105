@@ -35,134 +35,162 @@
 			<div class="slides">
 				<section>
 					<h1><img width="300" style="background:none; border:none; box-shadow:none;" src="img/ionic-logo.png"/> 105</h1>
-					<h3>Construyendo una  APP</h3>
-					<p>
-						<small>Instructor(es):<br/> <a href="http://io.carlosrojasblog.com">Carlos Rojas</a> [carlos@bootcampwith.us] / <a href="http://twitter.com/carlosrojas_o">@carlosrojas_o</a><br/>
-						</small>
-					</p>
+					<h3>Construyendo una  MoneyAPP</h3>
 				</section>
 
 					<section>
 						<h1>Objetivo</h1>
 						<p>
-							Modificando la apariencia con SASS, Manipulando Gestos, Persistencia, Configurando comportamientos por defecto.
+							Usar los componentes de Ionic y agregar persistencia a traves de un BaaS.
+						</p>
+					</section>
+
+          <section>
+						<h2>¿Que es un BaaS?</h2>
+						<p>
+							Un Backend as a Service, es un modelo de servicio para otorgar a desarrolladores WEB y de App Moviles una forma de vincular sus apps con almacenamiento y servicios analiticos entre otros.
 						</p>
 					</section>
 
 
-          <section>
-            <div class="col preview demo-frame">
-              <iframe src="demos/navigation/index.html"></iframe>
-            </div>
-            <div class="col code">
-              <h2>Navegacion</h2>
-              <ul style="margin-left: 70px">
-                <li>Uso de AngularUI Router</li>
-                <li>Muestra boton de regreso cuando es posible</li>
-                <li>Transicion para seguir la direccion de la navegacion</li>
-                <li>Trabaja con el Boton de Regresar de Android</li>
-              </ul>
-            <pre><code data-trim contenteditable class="xml">
-  <ion-nav-bar>
-    <ion-nav-back-button>
-      Back
-    </ion-nav-back-button>
-  </ion-nav-bar>
-
-  <ion-nav-view></ion-nav-view>
-  </code></pre>
-            </div>
+          <!--
+            Intro
+          -->
+          <section title="">
+            <br><br>
+            <h2>Presentando a Firebase</h2>
+            <img src="images/firebase-logo.png" style="background:none; border:none; box-shadow:none;">
+            <br> <br>
           </section>
 
           <section>
-            <div class="col preview demo-frame">
-              <iframe src="demos/slidebox/index.html"></iframe>
-            </div>
-            <div class="col code">
-              <h2>Slide Box</h2>
-            <pre><code data-trim contenteditable class="xml">
-  <ion-slide-box on-slide-changed="change(index)">
-    <ion-slide>
-      Slide 1
-    </ion-slide>
-    <ion-slide>
-      Slide 2
-    </ion-slide>
-    <ion-slide>
-      Slide 3
-    </ion-slide>
-  </ion-slide-box></code></pre>
-            </div>
+            <p class="text-cream text-medium">El <span class="text-discs">Back-end en tiempo real</span></p>
+            <p class="text-cream text-medium">para tu App</p>
+          </section>
+
+          <!--
+            Google Docs
+          -->
+
+          <section>
+            <p class="text-small">Esto es lo que un Usuario ve.</p>
+            <img src="images/gdocs4.gif" alt="gdocs" style="background:none; border:none; box-shadow:none;" />
           </section>
 
           <section>
-            <div class="col preview demo-frame">
-              <iframe src="demos/spinner/index.html"></iframe>
-            </div>
-            <div class="col code">
-              <h2>Spinners</h2>
-              <ul style="margin-left: 70px">
-                <li>Animated SVGs</li>
-                <li>More than just rotating icons</li>
-                <li>Defaults to platform's spinner</li>
-                <li>Style with CSS</li>
-              </ul>
-            <pre><code data-trim contenteditable class="xml">
-  <ion-spinner></ion-spinner>
-
-  <ion-spinner icon="dots"></ion-spinner>
-
-  <ion-spinner class="spinner-light"></ion-spinner></code></pre>
-            </div>
+            <p class="text-small">Esto es lo que un Dev ve.</p>
+            <img src="images/backend-reqs.gif" alt="" style="background:#fff; border:none; box-shadow:none;" />
           </section>
 
           <section>
-            <div class="col preview demo-frame">
-              <iframe src="demos/infinitescroll/index.html"></iframe>
-            </div>
-            <div class="col code">
-              <h2>Infinite Scroll</h2>
-              <ul style="margin-left: 70px">
-                <li>Animated SVGs</li>
-                <li>More than just rotating icons</li>
-                <li>Defaults to platform's spinner</li>
-                <li>Style with CSS</li>
-              </ul>
-            <pre><code data-trim contenteditable class="xml">
-  <ion-spinner></ion-spinner>
-
-  <ion-spinner icon="dots"></ion-spinner>
-
-  <ion-spinner class="spinner-light"></ion-spinner></code></pre>
-            </div>
+            <h4>Backend</h4>
+            <!-- data-box -->
+            <img src="images/data-box.png" style="background:none; border:none; box-shadow:none;" width="20%">
+            <img src="images/security-box.png" style="background:none; border:none; box-shadow:none;" width="20%">
+            <img src="images/login-box.png" style="background:none; border:none; box-shadow:none;" width="20%">
+            <img src="images/hosting-box.png" style="background:none; border:none; box-shadow:none;" width="20%">
           </section>
 
           <section>
-            <div class="col preview">
-              <img src="img/list-example.png" class="logo" width="380" height="800">
-            </div>
-            <div class="col code">
-              <h2>Listas</h2>
-            <pre><code data-trim contenteditable class="xml">
-  <div class="list">
-
-    <div class="item item-divider">
-      Candy Bars
-    </div>
-
-    <a class="item" href="#">
-      Butterfinger
-    </a>
-
-    <a class="item" href="#">
-      Kit Kat
-    </a>
-
-    ...
-
-  </div></code></pre>
-            </div>
+            <h4>El usuario espera</h4>
+            <p class="text-small era-point">Velocidad</p>
+            <p class="text-small era-point">Offline</p>
+            <p class="text-small era-point">Multi-platforma</p>
+            <p class="text-small era-point">Autenticacion Simple</p>
           </section>
+
+          <!--
+            Firebase
+          -->
+
+
+          <section>
+            <h2>Cloud database</h2>
+            <p class="era-point">NoSQL data-store</p>
+            <p class="era-point">Retorna JSON from a RESTful API</p>
+          </section>
+
+          <section>
+            <img src="/images/simple-api.png" alt="" style="background:none; border:none; box-shadow:none;">
+          </section>
+
+          <section>
+            <h2>Datos en tiempo real</h2>
+            <p class="era-point text-cream">
+              Si <span class="text-discs">los datos son actualizados en Firebase</span>,
+              este envia la actualizacion de regreso a todos <span class="text-tarheel">los clientes escuchando</span>
+            </p>
+          </section>
+
+          <section>
+            <img src="/images/realtime-api.png" alt="" style="background:none; border:none; box-shadow:none;max-width: 85%;">
+          </section>
+
+          <section>
+            <p class="text-medium">SDKs</p>
+            <img src="/images/platforms.png" alt="" style="background:none; border:none; box-shadow:none;">
+          </section>
+
+          <section>
+            <h2>Store Data</h2>
+            <pre>
+              <code data-trim class="javascript">
+  var ref = new Firebase('https://webapi.firebaseio.com/realtime');
+  ref.set('All the things');
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h2>Sync Data</h2>
+            <pre>
+              <code data-trim class="javascript">
+  var label = document.getElementById('labelRealtime');
+  var ref = new Firebase('https://webapi.firebaseio.com/realtime');
+  ref.on('value', function(snap) {
+    label.innerText = snap.val();
+  });
+              </code>
+            </pre>
+          </section>
+
+          <section>
+            <h2>Authentication</h2>
+            <pre>
+              <code data-trim class="javascript">
+  var ref = new Firebase('https://webapi.firebaseio.com/');
+
+  // Login with Google
+  ref.authWithOAuthPopup('google', function(error, authData) {
+    console.log(authData);
+  });
+
+  // Listen for authentcated users
+  ref.onAuth(function(authData) {
+    if(authData) {
+      console.log('User is logged in!');
+    }
+  });
+              </code>
+            </pre>
+
+          </section>
+
+          <section>
+            <p class="text-medium">Buena documentacion es importante</p>
+            <br><br>
+            <p class="era-point text-tarheel">
+              <a class="text-tarheel" href="https://firebase.com/docs">https://firebase.com/docs</a>
+            </p>
+          </section>
+
+          <section>
+            <h2>Enfocate en tu app</h2>
+            <p class="era-point">El usuario no le importa cuantas DB tu tienes.</p>
+            <p class="era-point">Lo que importa es que tu app es
+              <span class="text-tarheel">rapida y util.</span>
+            </p>
+            </section>
 
 			</div>
 
